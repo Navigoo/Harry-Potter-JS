@@ -1,0 +1,42 @@
+/* Hero Image Styling: Största bakgrundsbilden högst upp på sidan */
+.hero-image {
+    background-image: url('https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=1350&q=80'); /* Byt ut till en verklig Harry Potter-bild-URL */
+    height: 60vh; /* Höjd på hero-bilden */
+    background-size: cover; /* Bilden täcker hela området */
+    background-position: center; /* Bilden centrerad */
+    position: relative; /* För att placera overlay korrekt */
+}
+
+/* Overlay för bättre textsynlighet: Mörk lager ovanpå hero-bilden */
+.hero-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Mörk transparent overlay */
+}
+
+/* Titel i Hero Image */
+.hero-image h1 {
+    position: relative; /* För att ligga ovanpå overlay */
+    z-index: 1; /* Högre z-index för att säkerställa att texten syns */
+}
+
+/* Bokkort Styling: Marginaler mellan korten */
+.book-card {
+    margin-bottom: 30px;
+}
+
+/* Bokkort Bild Styling: Fast höjd och anpassad bild */
+.book-card img {
+    height: 400px; /* Höjd på bokomslagsbilden */
+    object-fit: cover; /* Bilden täcker hela bildområdet utan att förvrängas */
+}
+
+/* Bokkort Kropp Styling: Automatiskt höjd och ingen overflow */
+.book-card .card-body {
+    height: auto;
+    overflow: hidden;
+}
