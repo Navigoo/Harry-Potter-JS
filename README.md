@@ -12,7 +12,7 @@ const searchInput = document.getElementById('search-input');
 const filterYear = document.getElementById('filter-year');
 const sortOptions = document.getElementById('sort-options');
 
-2. Globala variabler (dock ej VAR)
+2. Globala variabler
 
 Här skapar vi två globala variabler: en för att lagra alla böcker från API:et och en för filtrerade böcker.
 
@@ -138,3 +138,4 @@ När sidan har laddats, hämtar vi böckerna och visar dem på sidan.
 document.addEventListener('DOMContentLoaded', fetchBooks);
 
 Denna beskrivning är anpassad för att läsas enkelt i en `.md`-fil, med fokus på att bryta ned vad koden gör i olika steg.
+# Books
